@@ -1,0 +1,41 @@
+/*Every element is going to have this box sizing. Now the width is 800px plus the margin.*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.page-container {
+  width: 800px;
+  /*We have an 800px wide page container.*/
+  margin: 10px auto;
+  /*10px on top; auto means equal margins on the left and right sides.*/
+  background-color: white;
+  padding: 32px;
+  /*page-conteiner now wider than 800px*/
+}
+
+.product-listing {
+  display: flex;
+  /*to use flex*/
+  flex: 1;
+  /*zoom level meaning 100%*/
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*want these to display in a row.*/
+}
+
+/*target individual items*/
+
+.product-listing .product-list-item {
+  padding: 10px 30px;
+  width: 200px;
+  /*each div 200px wide*/
+}
